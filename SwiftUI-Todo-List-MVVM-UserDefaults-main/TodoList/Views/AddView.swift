@@ -12,7 +12,6 @@ struct AddView: View {
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var listViewModel: ListViewModel
     @State var textFieldText: String = ""
-    
     @State var alertTitle: String = ""
     @State var showAlert: Bool = false
     
@@ -21,7 +20,7 @@ struct AddView: View {
             VStack {
                 TextField("Type something here...", text: $textFieldText)
                     .padding(.horizontal)
-                    .frame(height: 55)
+                    .frame(height:80)
                     .background(Color(UIColor.secondarySystemBackground))
                     .cornerRadius(10)
                 
@@ -35,13 +34,11 @@ struct AddView: View {
                         .cornerRadius(10)
                 })
             }
-            .padding(14)
+            .padding(15)
         }
         .navigationTitle("Add an Item 🖊")
         .alert(isPresented: $showAlert, content: getAlert)
     }
-    
-    // MARK: FUNCTIONS
     
     func saveButtonPressed() {
         if textIsAppropriate() {
@@ -64,8 +61,6 @@ struct AddView: View {
     }
     
 }
-
-    // MARK: PREVIEW
 
 struct AddView_Previews: PreviewProvider {
     static var previews: some View {

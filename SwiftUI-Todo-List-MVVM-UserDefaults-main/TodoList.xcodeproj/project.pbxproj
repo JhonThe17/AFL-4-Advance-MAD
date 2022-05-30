@@ -16,7 +16,6 @@
 		02F8C3E425EF085200BDAB62 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F8C3E325EF085200BDAB62 /* ItemModel.swift */; };
 		02F8C3EE25EFF83500BDAB62 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F8C3ED25EFF83500BDAB62 /* ListViewModel.swift */; };
 		02F8C3FE25F08D6500BDAB62 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F8C3FD25F08D6500BDAB62 /* HomePageView.swift */; };
-		699FED052844D76300D9BCB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 699FED042844D76300D9BCB4 /* LaunchScreen.storyboard */; };
 		69F13353283E090100646B68 /* OnboardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F13352283E090100646B68 /* OnboardingItem.swift */; };
 		69F13355283E094C00646B68 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F13354283E094C00646B68 /* OnboardingView.swift */; };
 		69F13379283E14B700646B68 /* OnboardingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F13378283E14B700646B68 /* OnboardingScreenView.swift */; };
@@ -34,7 +33,6 @@
 		02F8C3E325EF085200BDAB62 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		02F8C3ED25EFF83500BDAB62 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		02F8C3FD25F08D6500BDAB62 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
-		699FED042844D76300D9BCB4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69F13352283E090100646B68 /* OnboardingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItem.swift; sourceTree = "<group>"; };
 		69F13354283E094C00646B68 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		69F13378283E14B700646B68 /* OnboardingScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreenView.swift; sourceTree = "<group>"; };
@@ -96,7 +94,6 @@
 				022EF17C25EEEC0000112224 /* ListCheckView.swift */,
 				022EF17F25EEEDF000112224 /* AddView.swift */,
 				02F8C3FD25F08D6500BDAB62 /* HomePageView.swift */,
-				699FED042844D76300D9BCB4 /* LaunchScreen.storyboard */,
 				69F13352283E090100646B68 /* OnboardingItem.swift */,
 				69F13354283E094C00646B68 /* OnboardingView.swift */,
 				69F13378283E14B700646B68 /* OnboardingScreenView.swift */,
@@ -177,7 +174,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				699FED052844D76300D9BCB4 /* LaunchScreen.storyboard in Resources */,
 				022EF16E25EEE90C00112224 /* Preview Assets.xcassets in Resources */,
 				022EF16B25EEE90C00112224 /* Assets.xcassets in Resources */,
 			);

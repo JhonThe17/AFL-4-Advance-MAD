@@ -30,14 +30,6 @@ class ListViewModel: ObservableObject {
         self.items = savedItems
     }
     
-    func deleteItem(indexSet: IndexSet) {
-        items.remove(atOffsets: indexSet)
-    }
-    
-    func moveItem(from: IndexSet, to: Int) {
-        items.move(fromOffsets: from, toOffset: to)
-    }
-    
     func addItem(title: String) {
         let newItem = ItemModel(title: title, isCompleted: false)
         items.append(newItem)
