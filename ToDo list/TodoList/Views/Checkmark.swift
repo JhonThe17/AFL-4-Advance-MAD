@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ListRowView: View {
+struct Checkmark: View {
     
     let item: ItemModel
     
@@ -30,8 +30,8 @@ struct ListRowView_Previews: PreviewProvider {
     
     static var previews: some View {
         Group {
-            ListRowView(item: item1)
-            ListRowView(item: item2)
+            Checkmark(item: item1)
+            Checkmark(item: item2)
         }
         .previewLayout(.sizeThatFits)
         

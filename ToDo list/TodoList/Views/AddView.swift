@@ -10,7 +10,7 @@ import SwiftUI
 struct AddView: View {
     
     @Environment(\.presentationMode) var presentationMode
-    @EnvironmentObject var listViewModel: ListViewModel
+    @EnvironmentObject var todomodel: TodoModel
     @State var textFieldText: String = ""
     @State var alertTitle: String = ""
     @State var showAlert: Bool = false
@@ -42,7 +42,7 @@ struct AddView: View {
     
     func saveButtonPressed() {
         if textIsAppropriate() {
-            listViewModel.addItem(title: textFieldText)
+            todomodel.addItem(title: textFieldText)
             presentationMode.wrappedValue.dismiss()
         }
     }

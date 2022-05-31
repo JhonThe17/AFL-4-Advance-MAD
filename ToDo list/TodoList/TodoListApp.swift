@@ -10,15 +10,15 @@ import SwiftUI
 @main
 struct TodoListApp: App {
     
-    @StateObject var listViewModel: ListViewModel = ListViewModel()
+    @StateObject var todomodel: TodoModel = TodoModel()
     
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                ListView()
+                ToDoList()
             }
             .navigationViewStyle(StackNavigationViewStyle())
-            .environmentObject(listViewModel)
+            .environmentObject(todomodel)
         }
     }
 }

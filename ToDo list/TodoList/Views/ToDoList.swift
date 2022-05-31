@@ -7,25 +7,25 @@
 
 import SwiftUI
     
-struct ListView: View {
+struct ToDoList: View {
     
-    @EnvironmentObject var listViewModel: ListViewModel
+    @EnvironmentObject var todomodel: TodoModel
     
     var body: some View {
         ZStack {
-            if listViewModel.items.isEmpty {
+            if todomodel.items.isEmpty {
                 NoItemsView()
                     .transition(AnyTransition.opacity.animation(.easeIn))
             } else {
                 List {
-                    ForEach(listViewModel.items) { item in
-                        ListRowView(item: item)
+                    ForEach(todomodel.items) { item in
+                        Checkmark(item: item)
                             .onTapGesture {
                                 withAnimation(.linear) {
-                                    listViewModel.updateItem(item: item)
+                                    todomodel.updateItem(item: item)
                             }
                         }
-                    }
+                    }.onMove(perform: todomodel.moveItem)
                 }
                 .listStyle(PlainListStyle())
             }
@@ -43,8 +43,8 @@ struct ListView: View {
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            ListView()
+            TodoModel()
         }
-        .environmentObject(ListViewModel())
+        .environmentObject(TodoModel())
     }
 }
