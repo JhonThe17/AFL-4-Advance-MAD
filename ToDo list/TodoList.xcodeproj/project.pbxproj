@@ -13,8 +13,8 @@
 		022EF17825EEEA1D00112224 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022EF17725EEEA1D00112224 /* ListView.swift */; };
 		022EF17D25EEEC0100112224 /* ListCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022EF17C25EEEC0000112224 /* ListCheckView.swift */; };
 		022EF18025EEEDF000112224 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022EF17F25EEEDF000112224 /* AddView.swift */; };
-		02F8C3E425EF085200BDAB62 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F8C3E325EF085200BDAB62 /* ItemModel.swift */; };
-		02F8C3EE25EFF83500BDAB62 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F8C3ED25EFF83500BDAB62 /* ListViewModel.swift */; };
+		02F8C3E425EF085200BDAB62 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F8C3E325EF085200BDAB62 /* Item.swift */; };
+		02F8C3EE25EFF83500BDAB62 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F8C3ED25EFF83500BDAB62 /* ListView.swift */; };
 		02F8C3FE25F08D6500BDAB62 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F8C3FD25F08D6500BDAB62 /* HomePageView.swift */; };
 		69F13353283E090100646B68 /* OnboardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F13352283E090100646B68 /* OnboardingItem.swift */; };
 		69F13355283E094C00646B68 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F13354283E094C00646B68 /* OnboardingView.swift */; };
@@ -30,8 +30,8 @@
 		022EF17725EEEA1D00112224 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		022EF17C25EEEC0000112224 /* ListCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCheckView.swift; sourceTree = "<group>"; };
 		022EF17F25EEEDF000112224 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
-		02F8C3E325EF085200BDAB62 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
-		02F8C3ED25EFF83500BDAB62 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		02F8C3E325EF085200BDAB62 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		02F8C3ED25EFF83500BDAB62 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		02F8C3FD25F08D6500BDAB62 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		69F13352283E090100646B68 /* OnboardingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItem.swift; sourceTree = "<group>"; };
 		69F13354283E094C00646B68 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 		02F8C3E225EF082E00BDAB62 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				02F8C3E325EF085200BDAB62 /* ItemModel.swift */,
+				02F8C3E325EF085200BDAB62 /* Item.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -112,7 +112,7 @@
 		02F8C3EC25EFF80400BDAB62 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				02F8C3ED25EFF83500BDAB62 /* ListViewModel.swift */,
+				02F8C3ED25EFF83500BDAB62 /* ListView.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -186,11 +186,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02F8C3E425EF085200BDAB62 /* ItemModel.swift in Sources */,
+				02F8C3E425EF085200BDAB62 /* Item.swift in Sources */,
 				69F13353283E090100646B68 /* OnboardingItem.swift in Sources */,
 				022EF18025EEEDF000112224 /* AddView.swift in Sources */,
 				69F13355283E094C00646B68 /* OnboardingView.swift in Sources */,
-				02F8C3EE25EFF83500BDAB62 /* ListViewModel.swift in Sources */,
+				02F8C3EE25EFF83500BDAB62 /* ListView.swift in Sources */,
 				022EF16725EEE90900112224 /* TodoListApp.swift in Sources */,
 				022EF17825EEEA1D00112224 /* ListView.swift in Sources */,
 				02F8C3FE25F08D6500BDAB62 /* HomePageView.swift in Sources */,
