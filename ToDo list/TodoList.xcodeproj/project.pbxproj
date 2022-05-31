@@ -10,15 +10,12 @@
 		022EF16725EEE90900112224 /* TodoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022EF16625EEE90900112224 /* TodoListApp.swift */; };
 		022EF16B25EEE90C00112224 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 022EF16A25EEE90C00112224 /* Assets.xcassets */; };
 		022EF16E25EEE90C00112224 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 022EF16D25EEE90C00112224 /* Preview Assets.xcassets */; };
-		022EF17825EEEA1D00112224 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022EF17725EEEA1D00112224 /* ListView.swift */; };
-		022EF17D25EEEC0100112224 /* ListCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022EF17C25EEEC0000112224 /* ListCheckView.swift */; };
+		022EF17825EEEA1D00112224 /* ToDoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022EF17725EEEA1D00112224 /* ToDoList.swift */; };
+		022EF17D25EEEC0100112224 /* Checkmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022EF17C25EEEC0000112224 /* Checkmark.swift */; };
 		022EF18025EEEDF000112224 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022EF17F25EEEDF000112224 /* AddView.swift */; };
 		02F8C3E425EF085200BDAB62 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F8C3E325EF085200BDAB62 /* Item.swift */; };
 		02F8C3EE25EFF83500BDAB62 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F8C3ED25EFF83500BDAB62 /* ListView.swift */; };
-		02F8C3FE25F08D6500BDAB62 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F8C3FD25F08D6500BDAB62 /* HomePageView.swift */; };
-		69F13353283E090100646B68 /* OnboardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F13352283E090100646B68 /* OnboardingItem.swift */; };
-		69F13355283E094C00646B68 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F13354283E094C00646B68 /* OnboardingView.swift */; };
-		69F13379283E14B700646B68 /* OnboardingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F13378283E14B700646B68 /* OnboardingScreenView.swift */; };
+		02F8C3FE25F08D6500BDAB62 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F8C3FD25F08D6500BDAB62 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,15 +24,12 @@
 		022EF16A25EEE90C00112224 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		022EF16D25EEE90C00112224 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		022EF16F25EEE90C00112224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		022EF17725EEEA1D00112224 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
-		022EF17C25EEEC0000112224 /* ListCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCheckView.swift; sourceTree = "<group>"; };
+		022EF17725EEEA1D00112224 /* ToDoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList.swift; sourceTree = "<group>"; };
+		022EF17C25EEEC0000112224 /* Checkmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkmark.swift; sourceTree = "<group>"; };
 		022EF17F25EEEDF000112224 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		02F8C3E325EF085200BDAB62 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		02F8C3ED25EFF83500BDAB62 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
-		02F8C3FD25F08D6500BDAB62 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
-		69F13352283E090100646B68 /* OnboardingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItem.swift; sourceTree = "<group>"; };
-		69F13354283E094C00646B68 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
-		69F13378283E14B700646B68 /* OnboardingScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreenView.swift; sourceTree = "<group>"; };
+		02F8C3FD25F08D6500BDAB62 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,13 +84,10 @@
 		022EF17625EEEA0500112224 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				022EF17725EEEA1D00112224 /* ListView.swift */,
-				022EF17C25EEEC0000112224 /* ListCheckView.swift */,
+				022EF17725EEEA1D00112224 /* ToDoList.swift */,
+				022EF17C25EEEC0000112224 /* Checkmark.swift */,
 				022EF17F25EEEDF000112224 /* AddView.swift */,
-				02F8C3FD25F08D6500BDAB62 /* HomePageView.swift */,
-				69F13352283E090100646B68 /* OnboardingItem.swift */,
-				69F13354283E094C00646B68 /* OnboardingView.swift */,
-				69F13378283E14B700646B68 /* OnboardingScreenView.swift */,
+				02F8C3FD25F08D6500BDAB62 /* Home.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -187,15 +178,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				02F8C3E425EF085200BDAB62 /* Item.swift in Sources */,
-				69F13353283E090100646B68 /* OnboardingItem.swift in Sources */,
 				022EF18025EEEDF000112224 /* AddView.swift in Sources */,
-				69F13355283E094C00646B68 /* OnboardingView.swift in Sources */,
 				02F8C3EE25EFF83500BDAB62 /* ListView.swift in Sources */,
 				022EF16725EEE90900112224 /* TodoListApp.swift in Sources */,
-				022EF17825EEEA1D00112224 /* ListView.swift in Sources */,
-				02F8C3FE25F08D6500BDAB62 /* HomePageView.swift in Sources */,
-				022EF17D25EEEC0100112224 /* ListCheckView.swift in Sources */,
-				69F13379283E14B700646B68 /* OnboardingScreenView.swift in Sources */,
+				022EF17825EEEA1D00112224 /* ToDoList.swift in Sources */,
+				02F8C3FE25F08D6500BDAB62 /* Home.swift in Sources */,
+				022EF17D25EEEC0100112224 /* Checkmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
