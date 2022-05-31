@@ -34,8 +34,6 @@ struct ToDoList: View {
             )
     }
 
-
-
 struct ToDoList_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
