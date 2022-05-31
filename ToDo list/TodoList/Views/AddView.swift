@@ -36,7 +36,7 @@ struct AddView: View {
             }
             .padding(15)
         }
-        .navigationTitle("Add an Item 🖊")
+        .navigationTitle("Add to Your List 🖊")
         .alert(isPresented: $showAlert, content: getAlert)
     }
     
@@ -68,14 +68,6 @@ struct AddView_Previews: PreviewProvider {
             NavigationView {
                 AddView()
             }
-            .preferredColorScheme(.light)
-            .environmentObject(ListViewModel())
-            NavigationView {
-                AddView()
-            }
-            .preferredColorScheme(.dark)
-            .environmentObject(ListViewModel())
-
         }
     }
 }
