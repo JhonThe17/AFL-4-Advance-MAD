@@ -22,6 +22,7 @@ struct ToDoList: View {
                             }
                         }
                     }.onMove(perform: todomodel.moveItem)
+                        .onDelete(perform: todomodel.deleteItem)
                 }
                 .listStyle(PlainListStyle())
             }
