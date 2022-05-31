@@ -7,10 +7,9 @@
 
 import SwiftUI
 
-struct NoItemsView: View {
+struct Home: View {
     
     @State var animate: Bool = false
-    let secondaryAccentColor = Color("SecondaryAccentColor")
     
     var body: some View {
         ScrollView {
@@ -28,10 +27,10 @@ struct NoItemsView: View {
     
 }
 
-struct NoItemsView_Previews: PreviewProvider {
+struct Home_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            NoItemsView()
+            Home()
                 .navigationTitle("Title")
             }
         }

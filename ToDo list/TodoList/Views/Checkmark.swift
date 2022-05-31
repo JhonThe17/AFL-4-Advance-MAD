@@ -23,7 +23,7 @@ struct Checkmark: View {
     }
 }
 
-struct ListRowView_Previews: PreviewProvider {
+struct Checkmark_Previews: PreviewProvider {
     
     static var item1 = ItemModel(title: "First item!", isCompleted: false)
     static var item2 = ItemModel(title: "Second Item.", isCompleted: true)

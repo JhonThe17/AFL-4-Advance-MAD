@@ -13,10 +13,6 @@ struct ToDoList: View {
     
     var body: some View {
         ZStack {
-            if todomodel.items.isEmpty {
-                NoItemsView()
-                    .transition(AnyTransition.opacity.animation(.easeIn))
-            } else {
                 List {
                     ForEach(todomodel.items) { item in
                         Checkmark(item: item)
@@ -29,7 +25,6 @@ struct ToDoList: View {
                 }
                 .listStyle(PlainListStyle())
             }
-        }
         .navigationTitle("Your Priority 📝")
         .navigationBarItems(
             leading: EditButton(),
@@ -38,13 +33,15 @@ struct ToDoList: View {
             )
     }
 
-}
 
-struct ListView_Previews: PreviewProvider {
+
+struct ToDoList_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            TodoModel()
+            ToDoList()
         }
         .environmentObject(TodoModel())
+        
+        }
     }
 }
