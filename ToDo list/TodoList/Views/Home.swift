@@ -9,8 +9,6 @@ import SwiftUI
 
 struct Home: View {
     
-    @State var animate: Bool = false
-    
     var body: some View {
         ScrollView {
             VStack(spacing: 10) {
@@ -21,17 +19,16 @@ struct Home: View {
                 
                 Text("List what you want to do for 1 day.. let's be more productive!")
                     .padding([.leading, .bottom, .trailing], 10.0)
-                    
+                
             }
         }
-    
-}
+    }
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             Home()
-                .navigationTitle("Title")
+                .navigationTitle("Your Priority 📝")
             }
         }
     }
