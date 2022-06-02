@@ -15,7 +15,6 @@ struct ToDoList: View {
         ZStack {
             if todomodel.items.isEmpty {
                 Home()
-                    .transition(AnyTransition.opacity.animation(.easeIn))
             } else {
                 List {
                     ForEach(todomodel.items) { item in
