@@ -30,7 +30,7 @@ struct ToDoList: View {
                 .listStyle(SidebarListStyle())
             }
         }
-        .navigationTitle("Your Priority 📝")
+        .navigationTitle("Your Priority 📋")
         .navigationBarItems(
             leading: EditButton(),
             trailing:

@@ -9,17 +9,9 @@ import Foundation
 
 class TodoModel: ObservableObject {
     
-    @Published var items: [ItemModel] = [] {
-        didSet {
-            saveItems()
-        }
-    }
-    
+    @Published var items: [ItemModel] = []
+   
     let itemsKey: String = "items_list"
-    
-    init() {
-        getItems()
-    }
     
     func getItems() {
         guard
@@ -48,11 +40,6 @@ class TodoModel: ObservableObject {
             items[index] = item.updateCompletion()
         }
     }
-    
-    func saveItems() {
-        if let encodedData = try? JSONEncoder().encode(items) {
-            UserDefaults.standard.set(encodedData, forKey: itemsKey)
-        }
-    }
-    
 }
+    
+

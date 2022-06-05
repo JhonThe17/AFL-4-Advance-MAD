@@ -20,7 +20,7 @@ struct AddView: View {
             VStack {
                 TextField("Type something here...", text: $textFieldText)
                     .padding(.horizontal)
-                    .frame(height:80)
+                    .frame(height:70)
                     .background(Color(UIColor.secondarySystemBackground))
                     .cornerRadius(10)
                 
