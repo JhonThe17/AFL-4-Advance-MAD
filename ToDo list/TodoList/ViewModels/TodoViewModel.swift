@@ -7,7 +7,7 @@
 
 import Foundation
 
-class TodoModel: ObservableObject {
+class TodoViewModel: ObservableObject {
     
     @Published var items: [ItemModel] = [] {
     

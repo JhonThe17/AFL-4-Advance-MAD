@@ -9,23 +9,23 @@ import SwiftUI
     
 struct ToDoList: View {
     
-    @EnvironmentObject var todomodel: TodoModel
+    @EnvironmentObject var todoviewmodel : TodoViewModel
     
     var body: some View {
         ZStack {
-            if todomodel.items.isEmpty {
+            if todoviewmodel.items.isEmpty {
                 Home()
             } else {
                 List {
-                    ForEach(todomodel.items) { item in
+                    ForEach(todoviewmodel.items) { item in
                         ListView(item: item)
                             .onTapGesture {
                                 withAnimation(.linear) {
-                                    todomodel.updateItem(item: item)
+                                    todoviewmodel.updateItem(item: item)
                             }
                         }
-                    }.onMove(perform: todomodel.moveItem)
-                        .onDelete(perform: todomodel.deleteItem)
+                    }.onMove(perform: todoviewmodel.moveItem)
+                        .onDelete(perform: todoviewmodel.deleteItem)
                 }
                 .listStyle(SidebarListStyle())
             }
@@ -43,7 +43,7 @@ struct ToDoList_Previews: PreviewProvider {
         NavigationView {
             ToDoList()
         }
-        .environmentObject(TodoModel())
+        .environmentObject(TodoViewModel())
         
         }
     }
