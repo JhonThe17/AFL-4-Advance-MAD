@@ -41,7 +41,7 @@ struct AddView: View {
     }
     
     func saveButtonPressed() {
-        if textIsAppropriate() {
+        if textIsAppropriate(){
             todoviewmodel.addItem(title: textFieldText)
             presentationMode.wrappedValue.dismiss()
         }
