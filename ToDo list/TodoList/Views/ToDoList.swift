@@ -18,7 +18,7 @@ struct ToDoList: View {
             } else {
                 List {
                     ForEach(todomodel.items) { item in
-                        Checkmark(item: item)
+                        ListView(item: item)
                             .onTapGesture {
                                 withAnimation(.linear) {
                                     todomodel.updateItem(item: item)
