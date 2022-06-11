@@ -12,6 +12,7 @@ struct AddView: View {
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var todoviewmodel: TodoViewModel
     @State var textFieldText: String = ""
+    @State var date : Date = Date()
     @State var alertTitle: String = ""
     @State var showAlert: Bool = false
     
@@ -23,6 +24,9 @@ struct AddView: View {
                     .frame(height:70)
                     .background(Color(UIColor.secondarySystemBackground))
                     .cornerRadius(10)
+                
+                DatePicker("Deadline :", selection: $date)
+                    .padding()
                 
                 Button(action: saveButtonPressed, label: {
                     Text("Save".uppercased())
@@ -42,7 +46,11 @@ struct AddView: View {
     
     func saveButtonPressed() {
         if textIsAppropriate(){
-            todoviewmodel.addItem(title: textFieldText)
+            let dateformat = DateFormatter()
+            dateformat.dateStyle = .medium
+            dateformat.timeStyle = .short
+            
+            todoviewmodel.addItem(title: textFieldText, date : dateformat.string(from: date))
             presentationMode.wrappedValue.dismiss()
         }
     }

@@ -15,7 +15,7 @@ struct TodoListApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                ToDoList()
+                    ToDoList()
             }
             .environmentObject(todoviewmodel)
         }

@@ -13,20 +13,35 @@ struct ListView: View {
     
     var body: some View {
         HStack {
-            Image(systemName: item.isCompleted ? "checkmark.circle" : "circle")
-                .foregroundColor(item.isCompleted ? .green : .red)
-            Text(item.title)
+            VStack {
+                HStack {
+                    Image(systemName: item.isCompleted ? "checkmark.circle": "circle")
+                        .foregroundColor(item.isCompleted ? .green : .red)
+                    Text(item.title)
+                        .strikethrough(item.isCompleted ? true : false)
+                    Spacer()
+                    
+                }
+                .font(.title2)
+                .padding(.vertical, 8)
+                HStack {
+                    Text("Deadline: \(item.date)" )
+                        .strikethrough(item.isCompleted ? true : false)
+                    Spacer()
+                }
+                .font(.title3)
+                .padding(.vertical, 8)
+            }
             Spacer()
         }
-        .font(.title2)
-        .padding(.vertical, 8)
     }
 }
 
+
 struct Checkmark_Previews: PreviewProvider {
     
-    static var item1 = ItemModel(title: "First item!", isCompleted: false)
-    static var item2 = ItemModel(title: "Second Item.", isCompleted: true)
+    static var item1 = ItemModel(title: "First Item", isCompleted: false, date: "Jun 6, 2022, 1:26 PM")
+    static var item2 = ItemModel(title: "Second Item", isCompleted: true, date: "Jun 6,2022, 1:30 PM")
     
     static var previews: some View {
         Group {
